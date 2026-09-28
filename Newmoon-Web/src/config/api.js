@@ -5,7 +5,7 @@ import { getAuthToken, clearAuthSession } from "@/utils/authStorage";
 // VITE_API_BASE_URL to their reachable API origin.
 const rawBaseUrl =
   import.meta.env.VITE_API_BASE_URL ||
-  (import.meta.env.DEV ? "http://192.168.254.105:8000/api" : "/api");
+  (import.meta.env.DEV ? "http://newmoon-project-backend-production.up.railway.app/api" : "/api");
 
 // Keep same-origin paths relative; add a scheme only to host-style overrides.
 const withScheme = /^https?:\/\//i.test(rawBaseUrl) || rawBaseUrl.startsWith("/")
